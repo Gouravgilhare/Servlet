@@ -1,0 +1,49 @@
+package feedback_app.session.manage;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+import jakarta.servlet.http.Cookie;
+
+@WebServlet("/servlet2")
+public class Request2Servlet extends HttpServlet{
+        @Override
+        protected  void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
+        	//we have cookie
+
+        	res.setContentType("text/html");
+        	var writer = res.getWriter();
+        	boolean flag = false;
+
+        	Cookie[] cookies = req.getCookies();
+        	if(cookies != null) {
+        		for( Cookie c: cookies) {
+        			String name = c.getName();
+        			if(name == "username") {
+        				System.out.println("username : " + c.getValue());
+
+        				writer.println("""
+
+        						<h3>Welcome : </h3>
+        						""".formatted(c.getValue()));
+        				flag= true;
+        				break;
+        			}
+        		}
+        	}
+
+
+        	if(!flag) {
+        		writer.println("""
+
+						<h3>No user found in the Cookie </h3>
+						""");
+        	}
+
+        }
+
+}

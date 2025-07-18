@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <%@include file="link.jsp" %>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+    	<header>
+
+
+    	</header>
+
+    </div>
+    <%@include file="script.jsp" %>
+</body>
+
+</html>

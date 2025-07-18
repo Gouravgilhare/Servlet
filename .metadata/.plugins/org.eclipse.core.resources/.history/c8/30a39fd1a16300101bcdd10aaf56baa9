@@ -1,0 +1,61 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <display-name>My Web App</display-name>
+
+
+<context-param>
+
+	<param-name>
+		app_name
+	</param-name>
+	<param-value>
+		Feedback_app
+	</param-value>
+</context-param>
+
+
+<servelt>
+	<servlet-name>servlet1</servlet-name>
+	<servlet-class>feedback_app.session.manage.Request1Servlet</servlet-class>
+	<init-param>
+		<param-name>userName</param-name>
+		<param-value>Gourav</param-value>
+	</init-param>
+</servelt>
+
+<servlet-mapping>
+	<servlet-name>
+		servlet1
+	</servlet-name>
+	<url-pattern>
+		/servlet1
+	</url-pattern>
+</servlet-mapping>
+
+
+<servelt>
+	<servlet-name>servlet2</servlet-name>
+	<servlet-class>feedback_app.session.manage.Request2Servlet</servlet-class>
+	<init-param>
+		<param-name>userid</param-name>
+		<param-value>12345</param-value>
+	</init-param>
+</servelt>
+
+<servlet-mapping>
+	<servlet-name>
+		servlet2
+	</servlet-nae>
+	<url-pattern>
+		/servlet2
+	</url-pattern>
+</servlet-mapping>
+
+
+
+
+</web-app>

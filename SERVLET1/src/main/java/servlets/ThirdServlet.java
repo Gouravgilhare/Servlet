@@ -1,0 +1,47 @@
+package servlets;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.annotation.WebServlet;
+import java.io.PrintWriter;
+import java.io.IOException;
+import java.util.Date;
+
+@WebServlet("/third")
+public class ThirdServlet extends HttpServlet {
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException{
+		System.out.println("Processing doGet request by third servlet");
+	}
+	
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
+		System.out.println("Processing doPost request by third servlet");
+		
+		String message = req.getParameter("message");
+		System.out.println("message : "+ message);
+		
+		
+		//sending data to brower
+		
+		Date date = new Date();
+		res.setContentType("text/html");
+		PrintWriter writer = res.getWriter( );
+		writer.print("<h1>Form submitted</h1>");
+		writer.print("""
+				<html>
+				<body style="background-color:121212; color:#0d6efd;">
+				<h2>Message : %s</h2>
+				<h3>Current Date : %s	</h3>
+				</body>
+				</html>
+				""".formatted(message, date));
+		res.setStatus(401);
+	}
+
+	
+}

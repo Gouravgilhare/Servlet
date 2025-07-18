@@ -1,0 +1,2 @@
+<script scr="<%= application.getContextPath() %>/js/bootstrap.js"></script>
+<script scr="<%= application.getContextPath() %>/js/script.js"></script>

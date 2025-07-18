@@ -1,0 +1,10 @@
+package feedback_app.session.manage;
+
+import jakarta.servlet.http.*;
+import jakarta.servlet.annotation.*;
+
+
+@WebServlet("/servlet2")
+public class Request2Servlet extends HttpServlet{
+
+}

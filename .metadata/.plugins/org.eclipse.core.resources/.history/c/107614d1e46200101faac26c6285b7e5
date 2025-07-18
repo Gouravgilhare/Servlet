@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <%@include file="link.jsp" %>
+
+</head>
+
+<body>
+
+    <%@include file="navbar.jsp" %>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <form action="">
+
+                        <h3 class="form-control">
+                            Email
+                        </h3>
+                        <input type="email" name="email" class="form-control" id="">
+                        
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+
+        <%@include file="script.jsp" %>
+</body>
+
+</html>

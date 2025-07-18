@@ -1,0 +1,8 @@
+	<nav class="navbar navbar-default bg-dark text-primary">
+						<ul class="nav nav-list">
+							<li><a>Home</a></li>
+							<li><a>Service</a></li>
+							<li><a>About</a></li>
+							<li><a>Menu</a></li>
+						</ul>
+					</nav>

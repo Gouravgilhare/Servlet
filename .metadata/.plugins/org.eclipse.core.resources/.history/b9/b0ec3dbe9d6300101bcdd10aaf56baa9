@@ -1,0 +1,64 @@
+package feedback_app.session.manage;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+import jakarta.servlet.http.Cookie;
+
+@WebServlet("/servlet2")
+public class Request2Servlet extends HttpServlet{
+        @Override
+        protected  void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
+        	//we have cookie
+
+        	res.setContentType("text/html");
+        	var writer = res.getWriter();
+        	boolean flag = false;
+
+        	Cookie[] cookies = req.getCookies();
+        	StringBuilder content = new StringBuilder();
+        	if(cookies != null) {
+
+        		for( Cookie c: cookies) {
+
+        			String name = c.getName();
+        			if( name.equals("username")) {
+        				System.out.println("username : " + c.getValue());
+
+        				content.append("""
+
+        						<h3>Welcome :  %s</h3>
+        						""".formatted(c.getValue()));
+        				flag= true;
+
+        			}else if(name.equals("userid")) {
+        				System.out.println("username : " + c.getValue());
+
+        				content.append("""
+
+        						<h3>userid:  %s</h3>
+        						""".formatted(c.getValue()));
+        				flag= true;
+
+        			}
+        		}
+        	}
+
+        	if(flag) {
+        		writer.println("<h1>User is Present</h1>");
+        		writer.println(content);
+        	}
+        	if(!flag) {
+        		writer.println("""
+
+						<h3>No user found in the Cookie </h3>
+						""");
+        	}
+
+        }
+
+}

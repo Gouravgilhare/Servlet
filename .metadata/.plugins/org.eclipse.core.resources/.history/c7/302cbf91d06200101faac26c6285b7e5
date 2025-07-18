@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width:device-width initial-scale= 1.0 maximum-scaling = 1.0 user-scalable=false ">
+	<meta charset="UTF-8">
+	<%@include file="link.jsp" %>
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class = "container">
+			<div class = "row">
+				<div class ="col-md">
+				<%@include file="navbar.jsp"%>
+				</div>
+			</div>
+			<div class="row">
+				<h2>
+					Gourav Gilhare
+				</h2>
+			</div>
+		</div>
+
+	</div>
+
+<%@include file="script.jsp" %>
+</body>
+</html>

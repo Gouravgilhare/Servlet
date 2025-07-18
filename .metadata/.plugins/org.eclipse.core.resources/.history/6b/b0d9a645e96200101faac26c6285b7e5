@@ -1,0 +1,34 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #212121;
+	color: #eeeeee;
+}
+
+
+form .formClass {
+
+	padding:15px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	color: white;
+	background-color: #757575;
+}
+
+form .formClass input {
+
+}
+form .btn{
+
+	text-align:center;
+}
+
+#feedbackId {
+	margin-bottum:5px;
+	border-radius: 15px;
+	color: black;
+}

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+*{
+	color : #ffffff;
+	background-color: #121212;
+}
+
+
+.menu-container ul{
+		list-style-type : none;
+}
+.menu-container ul a{
+	display : block;
+	margin: 5px 10px;	
+}

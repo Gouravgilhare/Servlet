@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width:device-width initial-scale= 1.0 maximum-scaling = 1.0 user-scalable=false ">
+	<meta charset="UTF-8">
+	<%@include file="link.jsp" %>
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class = "container">
+			<div class = "row">
+				<div class ="col-md">
+					<nav class="navbar navbar-default">
+						<ul class="nav nav-list">
+							<li><a>Home</a></li>
+							<li><a>Service</a></li>
+							<li><a>About</a></li>
+							<li><a>Menu</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+<%@include file=script.jsp %>
+</body>
+</html>

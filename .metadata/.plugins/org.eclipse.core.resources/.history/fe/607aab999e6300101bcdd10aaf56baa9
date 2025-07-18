@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <%@include file="link.jsp" %>
+
+</head>
+
+<body>
+
+    <%@include file="navbar.jsp" %>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+
+
+                    <h1>Gourav Gilhare</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe corporis amet itaque aut quis
+                        expedita excepturi suscipit similique sequi officia magni harum eveniet non, odio a? Repellat
+                        soluta fuga ipsam.
+                    </p>
+                    <a href="<%= application.getContextPath() %>/feedback.jsp">
+
+                        <button class="btn btn-primary"> Give Us Feedback</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <%@include file="script.jsp" %>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <%@include file="link.jsp" %>
+        <style>
+            @charset "UTF-8";
+
+
+
+            .customNavbar {
+
+                height: 50px;
+
+            }
+
+            .navbar-brand {
+
+                color: #ffffff;
+                font-size: 20px;
+                font-weight: bold;
+
+            }
+
+            .navbar-nav>li>a {
+
+                color: #ecf0f1;
+                font-size: 16px;
+                padding: 15px 20px;
+            }
+
+            .navbar-nav>li>a:hover,
+            navbar-nav>.active>a,
+            navbar-nav>.active>a:hover {
+                background-color: #34495e !important;
+                color: #ffffff !important;
+            }
+
+
+            .navbar-toggle {
+                border-color: #ffffff;
+
+            }
+
+            .navbar-toggle .icon-bar {
+                background-color: #ffffff;
+
+            }
+        </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md col-sm-6 col-xs-3"></div>
+                <%@include file="navbar.jsp" %>
+            </div>
+            <div class="row">
+                <h2>Gourav Gilhare</h2>
+            </div>
+        </div>
+    </div>
+
+    <%@include file="script.jsp" %>
+</body>
+
+</html>

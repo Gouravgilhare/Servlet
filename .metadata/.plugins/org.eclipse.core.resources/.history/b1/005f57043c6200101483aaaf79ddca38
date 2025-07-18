@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home Page</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="<%= application.getContextPath() %>/css/style.css"/>
+
+</head>
+<body>
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col text-center">
+            <h1 class="text-primary">Home Page of Servlet1</h1>
+            
+            
+            <form action="<%= application.getContextPath() %>/third" method="POST">
+            
+            	<input type="text" class = "p-2 mt-5" value="text1" placeholder ="Enter Text">
+            	<input type="submit" class = "btn mt-3 btn-primary" value="SUBMIT" placeholder ="SUBMIT">
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<nav class="navbar navbar-inverse customNavbar navabar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-target="#mainNavbar" data-toggle="collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Gourav Gilhare</a>
+    </div>
+    <div class="navbar-collapse collapse" id="mainNavbar">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Service</a></li>
+    </ul>
+  </div>
+    </div>
+</nav>
